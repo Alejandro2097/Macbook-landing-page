@@ -1,12 +1,12 @@
 import {getPublicPath} from "../utils/publicPath.js";
 
 const navLinks = [
-    { label: "Store" },
-    { label: "Mac" },
-    { label: "iPhone" },
-    { label: "Watch" },
-    { label: "Vision" },
-    { label: "AirPods" },
+    { label: "Store", link: "https://www.apple.com/store" },
+    { label: "Mac", link: "https://www.apple.com/mac/" },
+    { label: "iPhone", link: "https://www.apple.com/iphone/" },
+    { label: "Watch", link: "https://www.apple.com/watch/" },
+    { label: "Vision", link: "https://www.apple.com/apple-vision-pro/" },
+    { label: "AirPods", link: "https://www.apple.com/airpods/" },
 ];
 
 const noChangeParts = [
