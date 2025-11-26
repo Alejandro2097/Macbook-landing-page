@@ -1,6 +1,7 @@
 import {useMediaQuery} from "react-responsive";
 import {useGSAP} from "@gsap/react";
 import gsap from 'gsap';
+import {getPublicPath} from "../utils/publicPath.js";
 
 const Showcase = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)'});
@@ -27,9 +28,9 @@ const Showcase = () => {
     return (
         <section id="showcase">
             <div className="media">
-                <video src="/videos/game.mp4" loop muted autoPlay playsInline />
+                <video src={getPublicPath("/videos/game.mp4")} loop muted autoPlay playsInline />
                 <div className="mask">
-                    <img src="/mask-logo.svg" />
+                    <img src={getPublicPath("/mask-logo.svg")} />
                 </div>
             </div>
 

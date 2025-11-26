@@ -1,4 +1,5 @@
 import {useEffect, useRef} from "react";
+import {getPublicPath} from "../utils/publicPath.js";
 
 const Hero = () => {
     const videoRef = useRef();
@@ -11,10 +12,10 @@ const Hero = () => {
         <section id="hero">
             <div>
                 <h1>MacBook Pro</h1>
-                <img src="/title.png" alt="MacBook Title" />
+                <img src={getPublicPath("/title.png")} alt="MacBook Title" />
             </div>
 
-            <video ref={videoRef} src="/videos/hero.mp4" autoPlay muted playsInline />
+            <video ref={videoRef} src={getPublicPath("/videos/hero.mp4")} autoPlay muted playsInline />
 
             <button>Buy</button>
 
